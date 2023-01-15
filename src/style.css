@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Latina';
+  src: url('./Latinia.ttf') format('ttf');
+}
 .hello {
+  font-family: 'Latina';
+  font-size: 3rem;
   color: blue;
 }
