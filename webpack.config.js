@@ -6,6 +6,10 @@ module.exports = {
   entry: {
     index: './src/index.js',
   },
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: '!!!Development!!!', //Change this when site is complete
@@ -31,5 +35,8 @@ module.exports = {
         type: 'asset/resource',
       },
     ],
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
 };
