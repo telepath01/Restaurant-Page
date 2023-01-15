@@ -1,5 +1,8 @@
 # Restaurant-Page
- Project
+
+Project
 
 Prior to startin any updates run the following
-- nom run watch
+
+- npm run watch
+- npm start

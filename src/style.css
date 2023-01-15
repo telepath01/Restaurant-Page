@@ -2,8 +2,43 @@
   font-family: 'Latina';
   src: url('./Latinia.ttf') format('ttf');
 }
-.hello {
-  font-family: 'Latina';
-  font-size: 3rem;
-  color: blue;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* content starts here
+
+*/
+#content {
+  display: grid;
+  background-color: aqua;
+  height: 100%;
+}
+
+/* header starts here 
+
+*/
+.header-container {
+  background-color: blue;
+}
+
+/*  Sidebar starts here
+
+*/
+.sidebar-container {
+  background-color: brown;
+}
+
+/* main starts here
+
+*/
+.main-container {
+  background-color: bisque;
 }
