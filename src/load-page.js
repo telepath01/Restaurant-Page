@@ -3,7 +3,6 @@ import Image1 from './food1.jpg';
 
 const LoadPage = (function () {
   const divArr = [];
-  const buttonArr = [];
   const classNameArr = [
     'content',
     'header-container',
@@ -15,6 +14,7 @@ const LoadPage = (function () {
     'main-image-container',
     'main-img',
     'main-text',
+    'sidebarBtn-container',
   ];
   const elementCreator = () => {
     const parentDiv = document.body; // array [0]
@@ -28,6 +28,7 @@ const LoadPage = (function () {
     const mianImageContent = document.createElement('div'); // array [8]
     const foodImage = document.createElement('img'); // array [9]
     const textBody = document.createElement('p'); // array [10]
+    const sidebarBtnDiv = document.createElement('div'); // array [11]
 
     divArr.push(
       parentDiv,
@@ -40,7 +41,8 @@ const LoadPage = (function () {
       mainTextContent,
       mianImageContent,
       foodImage,
-      textBody
+      textBody,
+      sidebarBtnDiv
     );
     return divArr;
   };
@@ -59,6 +61,7 @@ const LoadPage = (function () {
     element[8].className = className[7];
     element[9].className = className[8];
     element[10].className = className[9];
+    element[11].className = className[10];
 
     // image placement
     element[9].src = Image1;
@@ -67,6 +70,7 @@ const LoadPage = (function () {
     element[7].append(element[10]);
     element[6].append(element[7], element[8]);
     element[4].append(element[6]);
+    element[3].append(element[11]);
     element[2].append(element[5]);
     element[1].append(element[2], element[3], element[4]);
 
@@ -80,10 +84,10 @@ const LoadPage = (function () {
     renderElementText(divArr[5], 'Mi Jardin');
     renderElementText(
       divArr[10],
-      'Our family would like to first welcome you to our site. If you have not participated in our wonderful experience, then we welcome you to take the drive and participate in the best Hispanic atmosphere in the region. Our staff welcomes you with open arms and wonderful food. We have live music and a dance floor for those that enjoy Latin music. Our food can only be described as an experience for the heart. Book your table today and enjoy a wonderful time here at Mi Jardin.'
+      'Our family would like to first welcome you to our site. We welcome you to take the drive and participate in the best Hispanic atmosphere in the region. Our staff welcomes you with open arms and wonderful food. Our food can only be described as an experience for the heart. Book your table today and enjoy a wonderful time here at Mi Jardin.'
     );
   };
 
-  return { renderLoad };
+  return { divArr, classNameArr, renderLoad, renderElementText };
 })();
 export default LoadPage;

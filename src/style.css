@@ -11,6 +11,7 @@
 }
 
 body {
+  font-family: sans-serif;
   height: 100vh;
   width: 100vw;
 }
@@ -20,6 +21,7 @@ body {
 */
 #content {
   display: grid;
+  position: relative;
   background-color: aqua;
   height: 100%;
   grid-template-columns: 40% 1fr;
@@ -27,6 +29,7 @@ body {
   grid-template-areas:
     'heading heading'
     'sidebar main';
+  z-index: 0;
 }
 
 /* header starts here 
@@ -53,8 +56,29 @@ body {
 
 */
 .sidebar-container {
+  display: block;
   grid-area: sidebar;
   background-color: rgb(85, 114, 109);
+}
+.sidebarBtn-container {
+  margin-top: 3rem;
+  display: grid;
+  justify-content: center;
+  row-gap: 4rem;
+  grid-template-rows: repeat(3, 1fr);
+}
+.contact-btn,
+.menu-btn,
+.hours-btn {
+  cursor: pointer;
+  height: fit-content;
+  background: url('./flag.png') center/70% no-repeat rgb(104, 104, 104);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  text-shadow: 0.5px 0.5px 2px rgb(255, 255, 255);
+  border-radius: 1rem;
 }
 
 /* main starts here
@@ -71,26 +95,90 @@ body {
   flex-direction: column;
   justify-content: center;
   width: fit-content;
+
   gap: 10px;
 }
 .text-content {
   background-color: rgb(196, 196, 196);
   flex-wrap: wrap;
   margin-top: 10px;
-  height: 18rem;
+  height: fit-content;
   width: 95%;
   border: 1px solid black;
   border-radius: 2rem;
 }
 .main-text {
-  animation: name duration timing-function delay iteration-count direction
-    fill-mode;
-  padding: 10px;
-  font-size: 14px;
+  padding: 20px;
+  word-spacing: 0.1rem;
+  font-size: 17px;
+  text-shadow: 0.2px 0.2px 0.5px rgb(58, 58, 58);
 }
 .main-img {
   border: 2px solid black;
   border-radius: 1rem;
   background: url('./food1.jpg');
   width: 95%;
+}
+
+/* MODAL Containers Starts here*/
+/* Contact Modal */
+.contact-modal-container {
+  backdrop-filter: blur(10px);
+  display: none;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.contact-form-container {
+  padding: 0.5rem;
+  row-gap: 10px;
+  border: 3px solid #000000;
+  border-radius: 2rem;
+  display: grid;
+  align-self: center;
+  background-color: #55726d;
+  height: 50%;
+  width: 80%;
+  grid-template-rows: repeat(3, 1fr);
+}
+.contact-heading {
+  font-family: 'Latina';
+  text-shadow: 0.5px 0.5px 5px rgb(250, 111, 111);
+  text-align: center;
+}
+.contact.form {
+  display: flex;
+}
+.contact-fieldset {
+  padding: 10px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.submit-btn-container {
+  display: flex;
+  justify-content: center;
+}
+.submit-btn {
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px 10px 5px 10px;
+}
+.close-btn {
+  align-self: center;
+  height: fit-content;
+  width: 2.8rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 20rem;
+  margin-left: 15rem;
+  margin-bottom: 1rem;
 }

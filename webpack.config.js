@@ -6,6 +6,8 @@ module.exports = {
   entry: {
     index: './src/index.js',
     load: './src/load-page.js',
+    sidebar: './src/sidebar-creator.js',
+    contactModal: './src/contactModal.js',
   },
   devtool: 'inline-source-map',
   devServer: {
