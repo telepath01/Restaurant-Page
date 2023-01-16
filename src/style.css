@@ -1,6 +1,8 @@
 @font-face {
   font-family: 'Latina';
-  src: url('./Latinia.ttf') format('ttf');
+  src: url('./Latinia.ttf');
+  font-weight: 600;
+  font-style: normal;
 }
 
 * {
@@ -20,25 +22,75 @@ body {
   display: grid;
   background-color: aqua;
   height: 100%;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: 10% 1fr;
+  grid-template-areas:
+    'heading heading'
+    'sidebar main';
 }
 
 /* header starts here 
 
 */
 .header-container {
-  background-color: blue;
+  display: block;
+  align-self: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  grid-area: heading;
+  background-color: rgb(118, 170, 138);
+}
+.company-name {
+  margin-top: 0.5rem;
+  text-align: center;
+
+  font-family: 'Latina';
+  font-size: 2rem;
 }
 
 /*  Sidebar starts here
 
 */
 .sidebar-container {
-  background-color: brown;
+  grid-area: sidebar;
+  background-color: rgb(85, 114, 109);
 }
 
 /* main starts here
 
 */
 .main-container {
-  background-color: bisque;
+  grid-area: main;
+  justify-content: center;
+  background-color: rgb(124, 92, 53);
+}
+.main-content {
+  margin-left: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  gap: 10px;
+}
+.text-content {
+  background-color: rgb(196, 196, 196);
+  flex-wrap: wrap;
+  margin-top: 10px;
+  height: 18rem;
+  width: 95%;
+  border: 1px solid black;
+  border-radius: 2rem;
+}
+.main-text {
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+  padding: 10px;
+  font-size: 14px;
+}
+.main-img {
+  border: 2px solid black;
+  border-radius: 1rem;
+  background: url('./food1.jpg');
+  width: 95%;
 }
