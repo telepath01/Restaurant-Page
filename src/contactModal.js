@@ -3,6 +3,7 @@ import LoadPage from './load-page';
 
 const ContactModal = (function () {
   const elementsArray = [];
+  const modalContainer = elementsArray[0];
   const bodyElement = document.body;
   const elementCreator = (arr, type, className) => {
     const divElement = document.createElement(type);
@@ -89,14 +90,16 @@ const ContactModal = (function () {
   const ConatactListiner = () => {
     elementsArray[16].addEventListener('click', () => {
       elementsArray[0].style.display = 'none';
+      elementsArray[1].style.display = 'none';
     });
     elementsArray[15].addEventListener('click', (event) => {
       alert('Thank You for your comment');
       elementsArray[0].style.display = 'none';
+      elementsArray[1].style.display = 'none';
       event.preventDefault();
     });
   };
   elementIdentifier();
-  return { elementsArray, ConatactListiner };
+  return { elementsArray, ConatactListiner, elementCreator, modalContainer };
 })();
 export default ContactModal;

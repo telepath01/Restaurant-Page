@@ -8,6 +8,7 @@ module.exports = {
     load: './src/load-page.js',
     sidebar: './src/sidebar-creator.js',
     contactModal: './src/contactModal.js',
+    hoursModal: './src/hoursModal.js',
   },
   devtool: 'inline-source-map',
   devServer: {

@@ -1,6 +1,7 @@
 'use strict';
 import LoadPage from './load-page';
 import ContactModal from './contactModal';
+import HoursModal from './hoursModal';
 
 const SidebarElements = (function () {
   const sidebarBtnArr = [];
@@ -28,6 +29,11 @@ const SidebarElements = (function () {
   const contactUsListiner = () => {
     sidebarBtnArr[0].addEventListener('click', () => {
       ContactModal.elementsArray[0].style.display = 'flex';
+      ContactModal.elementsArray[1].style.display = 'grid';
+    });
+    sidebarBtnArr[2].addEventListener('click', () => {
+      ContactModal.elementsArray[0].style.display = 'flex';
+      HoursModal.hourElementsArray[0].style.display = 'grid';
     });
   };
 
