@@ -123,8 +123,8 @@ body {
 /* MODAL Containers Starts here*/
 /* Contact Modal */
 .contact-modal-container {
-  backdrop-filter: blur(10px);
-  display: none;
+  backdrop-filter: blur(2px);
+  display: none; /* This needs to be none after completion*/
   justify-content: center;
   position: absolute;
   z-index: 1;
@@ -137,7 +137,7 @@ body {
   row-gap: 10px;
   border: 3px solid #000000;
   border-radius: 2rem;
-  display: grid;
+  display: none;
   align-self: center;
   background-color: #55726d;
   height: 50%;
@@ -172,6 +172,61 @@ body {
   padding: 5px 10px 5px 10px;
 }
 .close-btn {
+  align-self: center;
+  height: fit-content;
+  width: 2.8rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 20rem;
+  margin-left: 15rem;
+  margin-bottom: 1rem;
+}
+
+/* Hours Modal start here 
+
+*/
+.hours-container {
+  padding: 0.5rem;
+  row-gap: 1px;
+  border: 3px solid #000000;
+  border-radius: 2rem;
+  display: none; /* This needs to be none after completion*/
+  align-self: center;
+  background-color: #55726d;
+  height: 50%;
+  width: 80%;
+  grid-template-rows: 2em 1fr 2em;
+}
+.hours-heading {
+  font-family: 'Latina';
+  text-shadow: 0.5px 0.5px 5px rgb(250, 111, 111);
+  text-align: center;
+  font-size: 1.5rem;
+}
+.hours-body {
+  display: grid;
+  padding: 1em;
+  grid-template-rows: repeat(6, 1fr);
+  background-color: antiquewhite;
+  border: 3px solid black;
+  border-radius: 2rem;
+  margin: 1.5em;
+}
+.hrs,
+.days {
+  font-family: 'Latina';
+  text-align: center;
+}
+
+.hrs {
+  font-size: 12px;
+}
+.days {
+  font-size: 18px;
+  font-weight: 700;
+}
+.hours-close {
   align-self: center;
   height: fit-content;
   width: 2.8rem;
