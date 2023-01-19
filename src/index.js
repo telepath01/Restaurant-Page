@@ -4,6 +4,7 @@ import LoadPage from './load-page';
 import SidebarElements from './sidebar-creator';
 import ContactModal from './contactModal';
 import HoursModal from './hoursModal';
+import MenuModal from './menuModal';
 
 const PageFunction = (function () {
   const landingPageRender = () => {
@@ -13,6 +14,8 @@ const PageFunction = (function () {
     ContactModal.ConatactListiner();
     HoursModal.hoursRender();
     HoursModal.hoursListener();
+    MenuModal.menuModalRender();
+    MenuModal.menuListener();
   };
   return { landingPageRender };
 })();

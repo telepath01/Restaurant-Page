@@ -124,7 +124,7 @@ body {
 /* Contact Modal */
 .contact-modal-container {
   backdrop-filter: blur(2px);
-  display: none; /* This needs to be none after completion*/
+  display: none; /*change this back to none when complete*/
   justify-content: center;
   position: absolute;
   z-index: 1;
@@ -183,6 +183,75 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Menu Modal Start Here
+
+*/
+.menu-container {
+  padding: 0.5rem;
+  row-gap: 1px;
+  border: 3px solid #000000;
+  border-radius: 2rem;
+  display: none; /* This needs to be none after completion*/
+  flex-direction: column;
+  align-self: center;
+  background-color: #55726d;
+  height: fit-content; /* Change to (fit content uppon completion)*/
+  width: 80%;
+}
+.menu-heading {
+  text-align: center;
+  font-family: 'Latina';
+}
+.items-container {
+  overflow: hidden;
+  overflow-y: scroll;
+  display: grid;
+  border-radius: 1rem;
+  row-gap: 1rem;
+  padding: 1rem;
+  height: 18rem;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  background-color: #6f8b86;
+}
+.item {
+  box-shadow: 5px 5px;
+  padding: 5px;
+  background-color: rgb(66, 134, 212);
+  /* border: 3px solid black; */
+  border-radius: 1rem;
+}
+.item-img {
+  border-radius: 1rem;
+  margin: 0.5rem 0 0.5rem 2.5rem;
+  height: 125px;
+}
+.item-heading {
+  text-align: center;
+  font-family: 'Latina';
+  font-size: 1.5rem;
+}
+.item-comment {
+  font-family: 'Latina';
+}
+.price {
+  font-weight: bold;
+  text-align: end;
+  margin-right: 3px;
+}
+
+.menu-close-btn {
+  align-self: center;
+  height: fit-content;
+  width: 2.8rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 20rem;
+  margin-top: 1rem;
+  margin-left: 15rem;
+  margin-bottom: 1rem;
+}
+
 /* Hours Modal start here 
 
 */
@@ -191,7 +260,7 @@ body {
   row-gap: 1px;
   border: 3px solid #000000;
   border-radius: 2rem;
-  display: none; /* This needs to be none after completion*/
+  display: none;
   align-self: center;
   background-color: #55726d;
   height: 50%;

@@ -2,6 +2,7 @@
 import LoadPage from './load-page';
 import ContactModal from './contactModal';
 import HoursModal from './hoursModal';
+import MenuModal from './menuModal';
 
 const SidebarElements = (function () {
   const sidebarBtnArr = [];
@@ -30,6 +31,10 @@ const SidebarElements = (function () {
     sidebarBtnArr[0].addEventListener('click', () => {
       ContactModal.elementsArray[0].style.display = 'flex';
       ContactModal.elementsArray[1].style.display = 'grid';
+    });
+    sidebarBtnArr[1].addEventListener('click', () => {
+      ContactModal.elementsArray[0].style.display = 'flex';
+      MenuModal.menuModalArr[0].style.display = 'flex';
     });
     sidebarBtnArr[2].addEventListener('click', () => {
       ContactModal.elementsArray[0].style.display = 'flex';
