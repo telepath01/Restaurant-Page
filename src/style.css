@@ -124,7 +124,7 @@ body {
 /* Contact Modal */
 .contact-modal-container {
   backdrop-filter: blur(2px);
-  display: none;
+  display: none; /*change this back to none when complete*/
   justify-content: center;
   position: absolute;
   z-index: 1;
@@ -195,7 +195,7 @@ body {
   flex-direction: column;
   align-self: center;
   background-color: #55726d;
-  height: 50%; /* Change to (fit content uppon completion)*/
+  height: fit-content; /* Change to (fit content uppon completion)*/
   width: 80%;
 }
 .menu-heading {
@@ -203,15 +203,40 @@ body {
   font-family: 'Latina';
 }
 .items-container {
+  overflow: hidden;
+  overflow-y: scroll;
   display: grid;
+  border-radius: 1rem;
+  row-gap: 1rem;
+  padding: 1rem;
+  height: 18rem;
   grid-template-rows: repeat(auto-fill, 1fr);
-  background-color: antiquewhite;
+  background-color: #6f8b86;
 }
 .item {
+  box-shadow: 5px 5px;
   padding: 5px;
-  background-color: aqua;
-  border: 2px solid black;
+  background-color: rgb(66, 134, 212);
+  /* border: 3px solid black; */
   border-radius: 1rem;
+}
+.item-img {
+  border-radius: 1rem;
+  margin: 0.5rem 0 0.5rem 2.5rem;
+  height: 125px;
+}
+.item-heading {
+  text-align: center;
+  font-family: 'Latina';
+  font-size: 1.5rem;
+}
+.item-comment {
+  font-family: 'Latina';
+}
+.price {
+  font-weight: bold;
+  text-align: end;
+  margin-right: 3px;
 }
 
 .menu-close-btn {
@@ -222,6 +247,7 @@ body {
   padding: 0.5rem;
   border: none;
   border-radius: 20rem;
+  margin-top: 1rem;
   margin-left: 15rem;
   margin-bottom: 1rem;
 }
