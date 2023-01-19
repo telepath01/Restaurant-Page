@@ -54,6 +54,11 @@ const HoursModal = (function () {
     });
   };
 
-  return { hoursRender, hourElementsArray, hoursListener };
+  return {
+    hoursRender,
+    hourElementsArray,
+    hoursListener,
+    elementContentCreator,
+  };
 })();
 export default HoursModal;

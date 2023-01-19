@@ -9,6 +9,7 @@ module.exports = {
     sidebar: './src/sidebar-creator.js',
     contactModal: './src/contactModal.js',
     hoursModal: './src/hoursModal.js',
+    menuModal: './src/menuModal.js',
   },
   devtool: 'inline-source-map',
   devServer: {
