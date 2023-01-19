@@ -1,5 +1,6 @@
 'use strict';
 import Image1 from './food1.jpg';
+import Banner from './beach.png';
 
 const LoadPage = (function () {
   const divArr = [];
@@ -15,6 +16,7 @@ const LoadPage = (function () {
     'main-img',
     'main-text',
     'sidebarBtn-container',
+    'banner-img',
   ];
   const elementCreator = () => {
     const parentDiv = document.body; // array [0]
@@ -29,6 +31,7 @@ const LoadPage = (function () {
     const foodImage = document.createElement('img'); // array [9]
     const textBody = document.createElement('p'); // array [10]
     const sidebarBtnDiv = document.createElement('div'); // array [11]
+    const bannerimage = document.createElement('img'); // array [12]
 
     divArr.push(
       parentDiv,
@@ -42,7 +45,8 @@ const LoadPage = (function () {
       mianImageContent,
       foodImage,
       textBody,
-      sidebarBtnDiv
+      sidebarBtnDiv,
+      bannerimage
     );
     return divArr;
   };
@@ -62,16 +66,17 @@ const LoadPage = (function () {
     element[9].className = className[8];
     element[10].className = className[9];
     element[11].className = className[10];
-
+    element[12].className = className[11];
     // image placement
     element[9].src = Image1;
+    element[12].src = Banner;
     //children append
     element[8].append(element[9]);
     element[7].append(element[10]);
     element[6].append(element[7], element[8]);
     element[4].append(element[6]);
     element[3].append(element[11]);
-    element[2].append(element[5]);
+    element[2].append(element[5], element[12]);
     element[1].append(element[2], element[3], element[4]);
 
     return element[1];

@@ -51,6 +51,12 @@ body {
   font-family: 'Latina';
   font-size: 2rem;
 }
+.banner-img {
+  margin: 0;
+  padding: 0;
+  display: none;
+  width: 5px;
+}
 
 /*  Sidebar starts here
 
@@ -103,21 +109,21 @@ body {
   flex-wrap: wrap;
   margin-top: 10px;
   height: fit-content;
-  width: 95%;
+  width: 90%;
   border: 1px solid black;
   border-radius: 2rem;
 }
 .main-text {
-  padding: 20px;
+  padding: 10px;
   word-spacing: 0.1rem;
-  font-size: 17px;
+  font-size: 15px;
   text-shadow: 0.2px 0.2px 0.5px rgb(58, 58, 58);
 }
 .main-img {
   border: 2px solid black;
   border-radius: 1rem;
   background: url('./food1.jpg');
-  width: 95%;
+  width: 90%;
 }
 
 /* MODAL Containers Starts here*/
@@ -305,4 +311,190 @@ body {
   border-radius: 20rem;
   margin-left: 15rem;
   margin-bottom: 1rem;
+}
+
+/* Changes to the page based on tablet view (min-width 768px ) */
+@media only screen and (min-width: 768px) {
+  #content {
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 15% 1fr;
+  }
+  /* The banner and restaurant name section */
+  .company-name {
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-left: 15rem;
+    font-size: 3.5rem;
+  }
+
+  .banner-img {
+    display: inline;
+
+    width: 768px;
+  }
+
+  /* The main body */
+  .text-content {
+    margin-top: 10px;
+    width: 60%;
+  }
+
+  .main-text {
+    font-size: 20px;
+  }
+
+  /* Hours Modal */
+  .hours-container {
+    width: 60%;
+  }
+  /* Contact modal */
+  .contact-form-container {
+    width: 60%;
+  }
+  /* Menu modal */
+  .menu-container {
+    padding: 2rem;
+    width: 60%;
+  }
+}
+/* Changes to the page based on laptop view (min-width 1024px ) */
+@media only screen and (min-width: 1024px) {
+  #content {
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 20% 1fr;
+  }
+  /* The banner and restaurant name section */
+  .company-name {
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-left: 25rem;
+    font-size: 3.5rem;
+  }
+
+  .banner-img {
+    display: inline;
+    width: 1024px;
+  }
+
+  /* The main body */
+  .text-content {
+    margin-top: 10px;
+    width: 50%;
+  }
+
+  .main-text {
+    font-size: 20px;
+  }
+  .main-img {
+    width: 60%;
+  }
+
+  /* Hours Modal */
+  .hours-container {
+    width: 60%;
+  }
+  /* Contact modal */
+  .contact-form-container {
+    width: 60%;
+  }
+  /* Menu modal */
+  .menu-container {
+    padding: 2rem;
+    width: 60%;
+  }
+}
+/* Changes to the page based on laptop view (min-width 1440px ) */
+@media only screen and (min-width: 1440px) {
+  #content {
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 20% 1fr;
+  }
+  /* The banner and restaurant name section */
+  .company-name {
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-left: 35rem;
+    font-size: 5rem;
+  }
+
+  .banner-img {
+    display: inline;
+    width: 1440px;
+  }
+
+  /* The main body */
+  .text-content {
+    margin-top: 10px;
+    width: 45%;
+  }
+
+  .main-text {
+    font-size: 25px;
+  }
+  .main-img {
+    width: 45%;
+    margin-left: 33em;
+  }
+
+  /* Hours Modal */
+  .hours-container {
+    width: 40%;
+  }
+  /* Contact modal */
+  .contact-form-container {
+    width: 40%;
+  }
+  /* Menu modal */
+  .menu-container {
+    padding: 2rem;
+    width: 40%;
+  }
+}
+/* Changes to the page based on laptop view (min-width 1669px ) */
+@media only screen and (min-width: 1669px) {
+  #content {
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 20% 1fr;
+  }
+  /* The banner and restaurant name section */
+  .company-name {
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-left: 35rem;
+    font-size: 8rem;
+  }
+
+  .banner-img {
+    display: inline;
+    width: 1669px;
+  }
+
+  /* The main body */
+  .text-content {
+    margin-left: 5rem;
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  .main-text {
+    font-size: 25px;
+  }
+  .main-img {
+    width: 50%;
+    margin-left: 20em;
+  }
+
+  /* Hours Modal */
+  .hours-container {
+    width: 30%;
+  }
+  /* Contact modal */
+  .contact-form-container {
+    width: 30%;
+  }
+  /* Menu modal */
+  .menu-container {
+    padding: 2rem;
+    width: 40%;
+  }
 }
