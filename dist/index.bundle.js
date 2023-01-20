@@ -18143,9 +18143,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _contactModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./contactModal */ "./src/contactModal.js");
 /* harmony import */ var _hoursModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hoursModal */ "./src/hoursModal.js");
-/* harmony import */ var _src_Bistec_Encebollado_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../src/Bistec-Encebollado.jpg */ "./src/Bistec-Encebollado.jpg");
-/* harmony import */ var _src_Campeon_FB_0_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../src/Campeon_FB.0.jpg */ "./src/Campeon_FB.0.jpg");
-/* harmony import */ var _src_pechuga_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../src/pechuga.png */ "./src/pechuga.png");
+/* harmony import */ var _src_Bistec_Encebollado_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../src/Bistec-Encebollado.jpg */ "./src/Bistec-Encebollado.jpg");
+/* harmony import */ var _src_Campeon_FB_0_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../src/Campeon_FB.0.jpg */ "./src/Campeon_FB.0.jpg");
+/* harmony import */ var _src_pechuga_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../../src/pechuga.png */ "./src/pechuga.png");
 
 
 
